@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.connectycube:connectycube-android-sdk-chat:1.9.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b6e714b2eb203e5c3ca5d68f495597c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b6e714b2eb203e5c3ca5d68f495597c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

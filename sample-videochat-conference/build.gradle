@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    flavorDimensions rootProject.dimensionDefault
+
+    defaultConfig {
+        applicationId "com.connectycube.sample.conference"
+        minSdkVersion 16
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+    }
+
+    productFlavors {
+        speedDev {
+            dimension rootProject.dimensionDefault
+            minSdkVersion 21
+        }
+        dev {
+            dimension rootProject.dimensionDefault
+            minSdkVersion 16
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            resValue "string", "versionName", "ConnectyCube WebRTC\nBuild version " + defaultConfig.getVersionName()
+        }
+
+        release {
+            resValue "string", "versionName", "ConnectyCube WebRTC\nBuild version " + defaultConfig.getVersionName()
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies { configuration ->
+    implementation "com.connectycube:connectycube-android-sdk-videochat-conference:$sdkVersion"
+    androidSupportComponents(configuration, supportLibVersion)
+
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+}
+
+private static void androidSupportComponents(configuration, version) {
+    configuration.implementation "com.android.support:recyclerview-v7:$version"
+    configuration.implementation "com.android.support:cardview-v7:$version"
+    configuration.implementation "com.android.support:appcompat-v7:$version"
+    configuration.implementation "com.android.support:support-annotations:$version"
+    configuration.implementation "com.android.support:design:$version"
+}
+
+apply from: "../artifacts.gradle"

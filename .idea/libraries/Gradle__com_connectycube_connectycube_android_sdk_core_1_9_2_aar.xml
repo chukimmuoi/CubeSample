@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.connectycube:connectycube-android-sdk-core:1.9.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07ab6afc4a7dc0e4ae0e9244cd6c05df/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07ab6afc4a7dc0e4ae0e9244cd6c05df/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

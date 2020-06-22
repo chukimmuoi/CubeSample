@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.connectycube:connectycube-android-sdk-videochat:1.9.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/971df97f011f8888bef713a5cc76160c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/971df97f011f8888bef713a5cc76160c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

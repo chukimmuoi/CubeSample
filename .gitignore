@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/sample-videochat-conference/build/
+/sample-videochat-conference/build/intermediates/classes/dev/debug/

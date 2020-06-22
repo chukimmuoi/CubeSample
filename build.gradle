@@ -1,0 +1,68 @@
+buildscript {
+    ext.kotlin_version = '1.2.61'
+    ext.kotlin_ktx_version = '0.3'
+    ext.kotlin_coroutines_version = '0.26.0'
+
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.google.gms:google-services:4.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenLocal()
+        maven {
+            url "https://github.com/ConnectyCube/connectycube-android-sdk-releases/raw/master/"
+        }
+        maven {
+            url 'https://maven.google.com'
+        }
+    }
+}
+
+ext {
+    compileSdkVersion = 26
+    buildToolsVersion = "27.0.3"
+
+    minSdkVersion = 14
+    targetSdkVersion = 26
+
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+    lintAbortOnError = false
+
+    // ConnectyCube SDK version
+    chatAdapterVersion = '1.0'
+    sdkVersion = "1.9.2"
+
+    versionCode = 102
+    versionName = '1.0.2'
+
+    testRunnerVersion = "0.4.1"
+
+    // Dependency versions
+    playServicesVersion = '11.4.2'
+    constraintLayoutVersion = '1.1.2'
+    supportLibVersion = '27.1.1'
+    supportV4Version = supportLibVersion
+    appcompatV7Version = supportLibVersion
+    recyclerviewV7Version = supportLibVersion
+    supportAnnotationsVersion = supportLibVersion
+    designVersion = supportLibVersion
+    cardViewVersion = supportLibVersion
+
+    glideVersion = '3.6.1'
+    stickylistheadersVersion = '0.4.2'
+    swipyVersion = '1.2.3'
+
+    dimensionDefault = 'default'
+}
